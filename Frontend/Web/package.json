@@ -22,7 +22,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "html-loader": "^4.1.0",
-    "html-webpack-plugin": "5.0.0-alpha.10",
+    "html-webpack-plugin": "^5.0.0-alpha.10",
     "json-loader": "^0.5.7",
     "prettier": "^2.7.1",
     "style-loader": "^3.3.1",
@@ -35,6 +35,6 @@
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack serve",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress"
   }
 }

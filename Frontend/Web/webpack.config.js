@@ -17,7 +17,7 @@ const babelOptions = {
 };
 const config = {
   mode: isProd ? 'production' : 'development',
-  context: path.resolve(__dirname, '.\src'),
+  context: path.resolve(__dirname, './src'),
   entry: './index.ts',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -81,11 +81,8 @@ const config = {
     }),
   ],
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
     port: 5000,
-    inline: true,
     hot: true,
-    overlay: true,
   },
 };
 module.exports = config;
